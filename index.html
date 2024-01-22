@@ -27,6 +27,7 @@
             colors: {
               clifford: "#da373d",
               "primary-color": "#FF4240",
+              "text-color": "#13131899",
             },
           },
         },
@@ -46,10 +47,14 @@
     <header class="container mx-auto mt-3 lg:mt-8">
       <!-- navbar start -->
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 px-[0px]">
           <div class="navbar-start">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden px-[0px]"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -76,7 +81,8 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="text-2xl lg:text-4xl font-extrabold cursor-pointer"
+            <a
+              class="text-2xl lg:text-4xl font-extrabold cursor-pointer pl-1 lg:pl-0"
               >Hockey<span class="text-primary-color">'</span>s</a
             >
           </div>
@@ -115,6 +121,68 @@
         </div>
       </nav>
       <!-- navbar end -->
+
+      <!-- banner start -->
+      <div>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner.png" class="w-full object-cover" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/banner.png" class="w-full object-cover" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/banner.png" class="w-full object-cover" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images/banner.png" class="w-full object-cover" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row md:justify-end md::relative md:mr-8"
+        >
+          <div
+            class="p-8 bg-[#131318] rounded-2xl md:max-w[50%] md:absolute md:bottom-28"
+          >
+            <h3 class="text-[#FFF] text-[18px] lg:text-2xl font-extrabold">
+              Meet all the heroes from the field
+            </h3>
+            <p
+              class="mt-4 text-[#FFFFFF99] font-medium text-[14px] lg:text-[16px]"
+            >
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+              <br />
+              turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- banner end -->
     </header>
     <main></main>
     <footer></footer>
